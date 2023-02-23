@@ -13,10 +13,10 @@ df = pickle.load(open('df.pkl','rb'))
 st.title("House Predicton")
 
 #brand
-location = st.selectbox("location",df['location'].unique())
+location = st.selectbox("Location",sort(df['location'].unique()))
 
 # type of laptop
-bhk = st.selectbox("bhk",df['bhk'].unique())
+bhk = st.selectbox("BHK",df['bhk'].unique())
 
 #Ram
 bathrooms = st.selectbox("Bath",[1,2,3,4])
