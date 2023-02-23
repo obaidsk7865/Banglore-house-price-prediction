@@ -13,7 +13,7 @@ df = pickle.load(open('df.pkl','rb'))
 st.title("House Predicton")
 
 #brand
-location = st.selectbox("Location",sort(df['location'].unique()))
+location = st.selectbox("Location",sorted(df['location'].unique()))
 
 # type of laptop
 bhk = st.selectbox("BHK",df['bhk'].unique())
